@@ -183,4 +183,138 @@ The chatbot handles difficult prompts (e.g., rude or ambiguous queries) effectiv
 
 ---
 
+## 🔄 Before vs Improved Response Examples
+
+These examples demonstrate how chatbot responses can be improved from generic responses to more structured, actionable, and user-focused outputs.
+
+---
+
+### Example 1 — Add to Cart (CART)
+
+**User Prompt:**  
+"I want to add product to cart now!!!"
+
+**Before (AI Response):**  
+"I'm here to help you with that! You can add the product to your cart easily."
+
+**Issues:**  
+- overly generic  
+- lacks clear steps  
+
+**Improved Response:**  
+"To add the product to your cart:
+1. Select the product you want.
+2. Click the **'Add to Cart'** button.
+3. Review your cart to confirm the item has been added.
+
+If you're using the mobile app, tap the cart icon after adding the item to verify."
+
+---
+
+### Example 2 — Delivery Issue (DELIVERY)
+
+**User Prompt:**  
+"why haven't I received my order???"
+
+**Before (AI Response):**  
+"I can help you with your order. Please check your delivery status."
+
+**Issues:**  
+- vague  
+- not actionable  
+
+**Improved Response:**  
+"You can track your order by:
+1. Going to the **'My Orders'** section
+2. Selecting the order
+3. Clicking **'Track Delivery'**
+
+If your delivery is delayed:
+- Check the expected delivery date
+- Contact support for an update
+
+Would you like me to help you track your order now?"
+
+---
+
+### Example 3 — Refund Request (PAYMENT)
+
+**User Prompt:**  
+"refund me right now this is unacceptable"
+
+**Before (AI Response):**  
+"I'm here to assist you with your request. Refunds can be processed."
+
+**Issues:**  
+- lacks urgency  
+- lacks steps  
+
+**Improved Response:**  
+"I understand your concern, and I’ll help you resolve this quickly.
+
+To request a refund:
+1. Go to **'My Orders'**
+2. Select the item
+3. Click **'Request Refund'**
+
+If this is urgent, you can contact support directly for faster processing. Let me know if you want assistance initiating the refund."
+
+---
+
+### Example 4 — Multi-intent (ORDER)
+
+**User Prompt:**  
+"can I change my order and refund it?"
+
+**Before (AI Response):**  
+"I can assist you with that request."
+
+**Issues:**  
+- does not handle multiple intents  
+- unclear  
+
+**Improved Response:**  
+"You can do both depending on your order status:
+
+✅ **To change your order:**
+- Go to **'My Orders'**
+- Select the order
+- Choose **'Modify Order'** (if available)
+
+✅ **To request a refund:**
+- Select the order
+- Click **'Request Refund'**
+
+Note: If the order has already shipped, you may need to request a refund instead of modifying it."
+
+---
+
+### Example 5 — Edge Case (Rude Query)
+
+**User Prompt:**  
+"do u guys even know my problem?"
+
+**Before (AI Response):**  
+"I'm here to help you with your issue."
+
+**Issues:**  
+- no clarification  
+- generic  
+
+**Improved Response:**  
+"I'm here to help — could you please share a bit more about the issue you're facing with your order or product?
+
+Once I have more details, I’ll guide you step by step."
+
+---
+
+### 🔍 Key Takeaway
+
+> The improved responses are:
+- more structured ✅  
+- more actionable ✅  
+- more context-aware ✅  
+
+This demonstrates that improving chatbot performance is less about correctness and more about **response quality optimisation**.
+
 ## 📂 Project Structure
