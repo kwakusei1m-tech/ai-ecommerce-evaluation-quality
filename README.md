@@ -101,9 +101,25 @@ Quality remains stable across categories, reinforcing that the chatbot is reliab
 ---
 
 ### ⚡ Edge Case Analysis
-![Edge Case Examples](visuals/edge_case_examples_table.png)
+
+
+## ⚡ Edge Case Examples
+
+| Prompt | Intent | Category | Error Type | Evaluation Summary | Improvement Recommendation |
+|------|--------|----------|------------|-------------------|---------------------------|
+| "I want to add product to cart now!!!" | add_product | CART | overly_generic_response | Response is relevant but uses standardised phrasing and lacks specific guidance. | Provide clearer, step-based instructions tailored to user context. |
+| "why haven't I received my order???" | track_order | DELIVERY | overly_generic_response | Response acknowledges the issue but remains generic and does not guide next steps effectively. | Include actionable steps such as checking tracking details or contacting support. |
+| "refund me right now this is unacceptable" | request_refund | PAYMENT | overly_generic_response | Response remains polite and aligned with intent but lacks urgency and targeted resolution steps. | Provide clear refund process steps and priority escalation guidance. |
+| "where is my stuff and when will it come" | track_delivery | DELIVERY | overly_generic_response; missing_key_step_or_omission | The answer addresses delivery but omits steps for tracking or resolving delays. | Add tracking instructions and expected timelines. |
+| "can I change my order and refund it?" | change_order | ORDER | overly_generic_response | Multi-intent request handled partially; response does not clearly separate actions. | Break into structured steps addressing both change and refund processes. |
+| "do u guys even know my problem?" | customer_service | GENERAL | overly_generic_response | Response is polite but fails to address the implied frustration and unclear request. | Ask clarifying questions before giving a generic response. |
+| "I need help ASAP with my payment issue" | payment_issue | PAYMENT | overly_generic_response | Response is relevant but lacks urgency handling and detailed troubleshooting steps. | Provide step-by-step troubleshooting and escalation options. |
+| "I want to return but I don't know how" | return_product | RETURNS | missing_key_step_or_omission | Response acknowledges return request but does not provide clear instructions. | Include detailed return procedure and necessary conditions. |
+| "help me order product now quickly" | place_order | ORDER | overly_generic_response | Response is correct but too generic and not adapted to urgency. | Provide direct quick-order steps and shortcuts. |
+| "why is this product out of stock again?" | product_availability | INVENTORY | overly_generic_response | Response explains stock issue but lacks meaningful explanation or alternatives. | Suggest restock timelines or alternative products. |
 
 **Insight:**  
+> These edge-case examples demonstrate that while the chatbot maintains correctness and tone under difficult conditions, it frequently defaults to generic responses instead of context-aware, action-oriented guidance.
 The chatbot handles difficult prompts (e.g., rude or ambiguous queries) effectively, but still produces generic responses instead of context-aware answers.
 
 ---
